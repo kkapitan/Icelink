@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0243DAE91ED75EF000CEE189 /* Icelink.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DAE71ED75EF000CEE189 /* Icelink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DAF71ED75F4600CEE189 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DAF61ED75F4600CEE189 /* main.m */; };
+		0243DAFA1ED75F4600CEE189 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DAF91ED75F4600CEE189 /* AppDelegate.m */; };
+		0243DAFD1ED75F4600CEE189 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DAFC1ED75F4600CEE189 /* ViewController.m */; };
+		0243DB001ED75F4600CEE189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0243DAFE1ED75F4600CEE189 /* Main.storyboard */; };
+		0243DB021ED75F4600CEE189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0243DB011ED75F4600CEE189 /* Assets.xcassets */; };
+		0243DB051ED75F4600CEE189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0243DB031ED75F4600CEE189 /* LaunchScreen.storyboard */; };
+		0243DB0F1ED7605300CEE189 /* Icelink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DAE41ED75EF000CEE189 /* Icelink.framework */; };
+		0243DB1E1ED760AC00CEE189 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DB111ED760AC00CEE189 /* App.m */; };
+		0243DB1F1ED760AC00CEE189 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0243DB121ED760AC00CEE189 /* Info.plist */; };
+		0243DB201ED760AC00CEE189 /* LocalMedia.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DB151ED760AC00CEE189 /* LocalMedia.m */; };
+		0243DB211ED760AC00CEE189 /* SessionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DB171ED760AC00CEE189 /* SessionController.m */; };
+		0243DB221ED760AC00CEE189 /* SessionController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0243DB181ED760AC00CEE189 /* SessionController.xib */; };
+		0243DB231ED760AC00CEE189 /* Signalling.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DB1A1ED760AC00CEE189 /* Signalling.m */; };
+		0243DB241ED760AC00CEE189 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 0243DB1C1ED760AC00CEE189 /* UIView+Toast.m */; };
+		0243DB251ED760AC00CEE189 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0243DB1D1ED760AC00CEE189 /* ViewController.xib */; };
+		0243DB341ED7612300CEE189 /* FM.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB261ED7612300CEE189 /* FM.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DB351ED7612300CEE189 /* FMIceLink.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB271ED7612300CEE189 /* FMIceLink.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DB361ED7612300CEE189 /* FMIceLinkWebRTC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB281ED7612300CEE189 /* FMIceLinkWebRTC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DB371ED7612300CEE189 /* FMIceLinkWebSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB291ED7612300CEE189 /* FMIceLinkWebSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DB381ED7612300CEE189 /* FMWebSync.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB2A1ED7612300CEE189 /* FMWebSync.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DB391ED7612300CEE189 /* FMWebSyncChat.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB2B1ED7612300CEE189 /* FMWebSyncChat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0243DB3A1ED7612300CEE189 /* FMWebSyncSubscribers.h in Headers */ = {isa = PBXBuildFile; fileRef = 0243DB2C1ED7612300CEE189 /* FMWebSyncSubscribers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		02CF283F1ED7672A00BB1729 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF283E1ED7672A00BB1729 /* VideoToolbox.framework */; };
+		02CF28411ED7673300BB1729 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28401ED7673300BB1729 /* AudioToolbox.framework */; };
+		02CF28431ED7674400BB1729 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28421ED7674400BB1729 /* OpenGLES.framework */; };
+		02CF28451ED7674F00BB1729 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28441ED7674F00BB1729 /* GLKit.framework */; };
+		02CF28471ED7676100BB1729 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28461ED7676100BB1729 /* AVFoundation.framework */; };
+		02CF28491ED7676800BB1729 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28481ED7676800BB1729 /* CFNetwork.framework */; };
+		02CF284B1ED7677200BB1729 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF284A1ED7677200BB1729 /* Security.framework */; };
+		02CF284D1ED7678000BB1729 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF284C1ED7678000BB1729 /* CoreVideo.framework */; };
+		02CF284F1ED7678600BB1729 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF284E1ED7678600BB1729 /* CoreMedia.framework */; };
+		02CF28511ED7679400BB1729 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28501ED7679400BB1729 /* CoreGraphics.framework */; };
+		02CF28531ED767B500BB1729 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28521ED767B500BB1729 /* UIKit.framework */; };
+		02CF28551ED767BC00BB1729 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28541ED767BC00BB1729 /* Foundation.framework */; };
+		02CF28571ED767D200BB1729 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF28561ED767D200BB1729 /* libz.tbd */; };
+		02CF285A1ED7754900BB1729 /* libFM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DB2D1ED7612300CEE189 /* libFM.a */; };
+		02CF285C1ED7754900BB1729 /* libFMIceLinkWebRTC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DB2F1ED7612300CEE189 /* libFMIceLinkWebRTC.a */; };
+		02CF285D1ED7754900BB1729 /* libFMIceLinkWebSync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DB301ED7612300CEE189 /* libFMIceLinkWebSync.a */; };
+		02CF285E1ED7754900BB1729 /* libFMWebSync.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DB311ED7612300CEE189 /* libFMWebSync.a */; };
+		02CF285F1ED7754900BB1729 /* libFMWebSyncChat.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DB321ED7612300CEE189 /* libFMWebSyncChat.a */; };
+		02CF28601ED7754900BB1729 /* libFMWebSyncSubscribers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0243DB331ED7612300CEE189 /* libFMWebSyncSubscribers.a */; };
+		02CF28701ED7836400BB1729 /* libFMIceLink-arm64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF286B1ED7836400BB1729 /* libFMIceLink-arm64.a */; };
+		02CF28711ED7836400BB1729 /* libFMIceLink-armv7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF286C1ED7836400BB1729 /* libFMIceLink-armv7.a */; };
+		02CF28721ED7836400BB1729 /* libFMIceLink-armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF286D1ED7836400BB1729 /* libFMIceLink-armv7s.a */; };
+		02CF28731ED7836400BB1729 /* libFMIceLink-i386.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF286E1ED7836400BB1729 /* libFMIceLink-i386.a */; };
+		02CF28741ED7836400BB1729 /* libFMIceLink-x86_64.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 02CF286F1ED7836400BB1729 /* libFMIceLink-x86_64.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02CF28611ED778A600BB1729 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0243DADB1ED75EF000CEE189 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0243DAE31ED75EF000CEE189;
+			remoteInfo = Icelink;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0243DAE41ED75EF000CEE189 /* Icelink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Icelink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0243DAE71ED75EF000CEE189 /* Icelink.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Icelink.h; sourceTree = "<group>"; };
+		0243DAE81ED75EF000CEE189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0243DAF31ED75F4600CEE189 /* IcelinkDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IcelinkDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0243DAF61ED75F4600CEE189 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0243DAF81ED75F4600CEE189 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0243DAF91ED75F4600CEE189 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0243DAFB1ED75F4600CEE189 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0243DAFC1ED75F4600CEE189 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0243DAFF1ED75F4600CEE189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0243DB011ED75F4600CEE189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0243DB041ED75F4600CEE189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0243DB101ED760AC00CEE189 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = App.h; sourceTree = "<group>"; };
+		0243DB111ED760AC00CEE189 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = App.m; sourceTree = "<group>"; };
+		0243DB121ED760AC00CEE189 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0243DB131ED760AC00CEE189 /* IcelinkDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IcelinkDemo.pch; sourceTree = "<group>"; };
+		0243DB141ED760AC00CEE189 /* LocalMedia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalMedia.h; sourceTree = "<group>"; };
+		0243DB151ED760AC00CEE189 /* LocalMedia.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalMedia.m; sourceTree = "<group>"; };
+		0243DB161ED760AC00CEE189 /* SessionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionController.h; sourceTree = "<group>"; };
+		0243DB171ED760AC00CEE189 /* SessionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionController.m; sourceTree = "<group>"; };
+		0243DB181ED760AC00CEE189 /* SessionController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SessionController.xib; sourceTree = "<group>"; };
+		0243DB191ED760AC00CEE189 /* Signalling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Signalling.h; sourceTree = "<group>"; };
+		0243DB1A1ED760AC00CEE189 /* Signalling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Signalling.m; sourceTree = "<group>"; };
+		0243DB1B1ED760AC00CEE189 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		0243DB1C1ED760AC00CEE189 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		0243DB1D1ED760AC00CEE189 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		0243DB261ED7612300CEE189 /* FM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FM.h; path = lib/FM.h; sourceTree = "<group>"; };
+		0243DB271ED7612300CEE189 /* FMIceLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMIceLink.h; path = lib/FMIceLink.h; sourceTree = "<group>"; };
+		0243DB281ED7612300CEE189 /* FMIceLinkWebRTC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMIceLinkWebRTC.h; path = lib/FMIceLinkWebRTC.h; sourceTree = "<group>"; };
+		0243DB291ED7612300CEE189 /* FMIceLinkWebSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMIceLinkWebSync.h; path = lib/FMIceLinkWebSync.h; sourceTree = "<group>"; };
+		0243DB2A1ED7612300CEE189 /* FMWebSync.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMWebSync.h; path = lib/FMWebSync.h; sourceTree = "<group>"; };
+		0243DB2B1ED7612300CEE189 /* FMWebSyncChat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMWebSyncChat.h; path = lib/FMWebSyncChat.h; sourceTree = "<group>"; };
+		0243DB2C1ED7612300CEE189 /* FMWebSyncSubscribers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FMWebSyncSubscribers.h; path = lib/FMWebSyncSubscribers.h; sourceTree = "<group>"; };
+		0243DB2D1ED7612300CEE189 /* libFM.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFM.a; path = lib/libFM.a; sourceTree = "<group>"; };
+		0243DB2F1ED7612300CEE189 /* libFMIceLinkWebRTC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMIceLinkWebRTC.a; path = lib/libFMIceLinkWebRTC.a; sourceTree = "<group>"; };
+		0243DB301ED7612300CEE189 /* libFMIceLinkWebSync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMIceLinkWebSync.a; path = lib/libFMIceLinkWebSync.a; sourceTree = "<group>"; };
+		0243DB311ED7612300CEE189 /* libFMWebSync.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMWebSync.a; path = lib/libFMWebSync.a; sourceTree = "<group>"; };
+		0243DB321ED7612300CEE189 /* libFMWebSyncChat.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMWebSyncChat.a; path = lib/libFMWebSyncChat.a; sourceTree = "<group>"; };
+		0243DB331ED7612300CEE189 /* libFMWebSyncSubscribers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMWebSyncSubscribers.a; path = lib/libFMWebSyncSubscribers.a; sourceTree = "<group>"; };
+		02CF283E1ED7672A00BB1729 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		02CF28401ED7673300BB1729 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		02CF28421ED7674400BB1729 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		02CF28441ED7674F00BB1729 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		02CF28461ED7676100BB1729 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		02CF28481ED7676800BB1729 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		02CF284A1ED7677200BB1729 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		02CF284C1ED7678000BB1729 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		02CF284E1ED7678600BB1729 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		02CF28501ED7679400BB1729 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		02CF28521ED767B500BB1729 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		02CF28541ED767BC00BB1729 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		02CF28561ED767D200BB1729 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		02CF28651ED7812000BB1729 /* libFMIceLink.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMIceLink.a; path = Icelink/lib/libFMIceLink.a; sourceTree = "<group>"; };
+		02CF286B1ED7836400BB1729 /* libFMIceLink-arm64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFMIceLink-arm64.a"; path = "lib/libFMIceLink-arm64.a"; sourceTree = "<group>"; };
+		02CF286C1ED7836400BB1729 /* libFMIceLink-armv7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFMIceLink-armv7.a"; path = "lib/libFMIceLink-armv7.a"; sourceTree = "<group>"; };
+		02CF286D1ED7836400BB1729 /* libFMIceLink-armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFMIceLink-armv7s.a"; path = "lib/libFMIceLink-armv7s.a"; sourceTree = "<group>"; };
+		02CF286E1ED7836400BB1729 /* libFMIceLink-i386.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFMIceLink-i386.a"; path = "lib/libFMIceLink-i386.a"; sourceTree = "<group>"; };
+		02CF286F1ED7836400BB1729 /* libFMIceLink-x86_64.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libFMIceLink-x86_64.a"; path = "lib/libFMIceLink-x86_64.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0243DAE01ED75EF000CEE189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02CF285A1ED7754900BB1729 /* libFM.a in Frameworks */,
+				02CF285C1ED7754900BB1729 /* libFMIceLinkWebRTC.a in Frameworks */,
+				02CF285D1ED7754900BB1729 /* libFMIceLinkWebSync.a in Frameworks */,
+				02CF285E1ED7754900BB1729 /* libFMWebSync.a in Frameworks */,
+				02CF285F1ED7754900BB1729 /* libFMWebSyncChat.a in Frameworks */,
+				02CF28701ED7836400BB1729 /* libFMIceLink-arm64.a in Frameworks */,
+				02CF28741ED7836400BB1729 /* libFMIceLink-x86_64.a in Frameworks */,
+				02CF28601ED7754900BB1729 /* libFMWebSyncSubscribers.a in Frameworks */,
+				02CF28571ED767D200BB1729 /* libz.tbd in Frameworks */,
+				02CF28551ED767BC00BB1729 /* Foundation.framework in Frameworks */,
+				02CF28531ED767B500BB1729 /* UIKit.framework in Frameworks */,
+				02CF28511ED7679400BB1729 /* CoreGraphics.framework in Frameworks */,
+				02CF284F1ED7678600BB1729 /* CoreMedia.framework in Frameworks */,
+				02CF284D1ED7678000BB1729 /* CoreVideo.framework in Frameworks */,
+				02CF284B1ED7677200BB1729 /* Security.framework in Frameworks */,
+				02CF28491ED7676800BB1729 /* CFNetwork.framework in Frameworks */,
+				02CF28721ED7836400BB1729 /* libFMIceLink-armv7s.a in Frameworks */,
+				02CF28471ED7676100BB1729 /* AVFoundation.framework in Frameworks */,
+				02CF28731ED7836400BB1729 /* libFMIceLink-i386.a in Frameworks */,
+				02CF28451ED7674F00BB1729 /* GLKit.framework in Frameworks */,
+				02CF28431ED7674400BB1729 /* OpenGLES.framework in Frameworks */,
+				02CF28411ED7673300BB1729 /* AudioToolbox.framework in Frameworks */,
+				02CF28711ED7836400BB1729 /* libFMIceLink-armv7.a in Frameworks */,
+				02CF283F1ED7672A00BB1729 /* VideoToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0243DAF01ED75F4600CEE189 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0243DB0F1ED7605300CEE189 /* Icelink.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0243DADA1ED75EF000CEE189 = {
+			isa = PBXGroup;
+			children = (
+				0243DAE61ED75EF000CEE189 /* Icelink */,
+				0243DAF41ED75F4600CEE189 /* IcelinkDemo */,
+				0243DAE51ED75EF000CEE189 /* Products */,
+				02CF283D1ED7672A00BB1729 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0243DAE51ED75EF000CEE189 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0243DAE41ED75EF000CEE189 /* Icelink.framework */,
+				0243DAF31ED75F4600CEE189 /* IcelinkDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0243DAE61ED75EF000CEE189 /* Icelink */ = {
+			isa = PBXGroup;
+			children = (
+				0243DB261ED7612300CEE189 /* FM.h */,
+				0243DB271ED7612300CEE189 /* FMIceLink.h */,
+				0243DB281ED7612300CEE189 /* FMIceLinkWebRTC.h */,
+				0243DB291ED7612300CEE189 /* FMIceLinkWebSync.h */,
+				02CF286B1ED7836400BB1729 /* libFMIceLink-arm64.a */,
+				02CF286C1ED7836400BB1729 /* libFMIceLink-armv7.a */,
+				02CF286D1ED7836400BB1729 /* libFMIceLink-armv7s.a */,
+				02CF286E1ED7836400BB1729 /* libFMIceLink-i386.a */,
+				02CF286F1ED7836400BB1729 /* libFMIceLink-x86_64.a */,
+				0243DB2A1ED7612300CEE189 /* FMWebSync.h */,
+				0243DB2B1ED7612300CEE189 /* FMWebSyncChat.h */,
+				0243DB2C1ED7612300CEE189 /* FMWebSyncSubscribers.h */,
+				0243DB2D1ED7612300CEE189 /* libFM.a */,
+				0243DB2F1ED7612300CEE189 /* libFMIceLinkWebRTC.a */,
+				0243DB301ED7612300CEE189 /* libFMIceLinkWebSync.a */,
+				0243DB311ED7612300CEE189 /* libFMWebSync.a */,
+				0243DB321ED7612300CEE189 /* libFMWebSyncChat.a */,
+				0243DB331ED7612300CEE189 /* libFMWebSyncSubscribers.a */,
+				0243DAE71ED75EF000CEE189 /* Icelink.h */,
+				0243DAE81ED75EF000CEE189 /* Info.plist */,
+			);
+			path = Icelink;
+			sourceTree = "<group>";
+		};
+		0243DAF41ED75F4600CEE189 /* IcelinkDemo */ = {
+			isa = PBXGroup;
+			children = (
+				0243DB101ED760AC00CEE189 /* App.h */,
+				0243DB111ED760AC00CEE189 /* App.m */,
+				0243DB121ED760AC00CEE189 /* Info.plist */,
+				0243DB131ED760AC00CEE189 /* IcelinkDemo.pch */,
+				0243DB141ED760AC00CEE189 /* LocalMedia.h */,
+				0243DB151ED760AC00CEE189 /* LocalMedia.m */,
+				0243DB161ED760AC00CEE189 /* SessionController.h */,
+				0243DB171ED760AC00CEE189 /* SessionController.m */,
+				0243DB181ED760AC00CEE189 /* SessionController.xib */,
+				0243DB191ED760AC00CEE189 /* Signalling.h */,
+				0243DB1A1ED760AC00CEE189 /* Signalling.m */,
+				0243DB1B1ED760AC00CEE189 /* UIView+Toast.h */,
+				0243DB1C1ED760AC00CEE189 /* UIView+Toast.m */,
+				0243DB1D1ED760AC00CEE189 /* ViewController.xib */,
+				0243DAF81ED75F4600CEE189 /* AppDelegate.h */,
+				0243DAF91ED75F4600CEE189 /* AppDelegate.m */,
+				0243DAFB1ED75F4600CEE189 /* ViewController.h */,
+				0243DAFC1ED75F4600CEE189 /* ViewController.m */,
+				0243DAFE1ED75F4600CEE189 /* Main.storyboard */,
+				0243DB011ED75F4600CEE189 /* Assets.xcassets */,
+				0243DB031ED75F4600CEE189 /* LaunchScreen.storyboard */,
+				0243DAF51ED75F4600CEE189 /* Supporting Files */,
+			);
+			path = IcelinkDemo;
+			sourceTree = "<group>";
+		};
+		0243DAF51ED75F4600CEE189 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0243DAF61ED75F4600CEE189 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		02CF283D1ED7672A00BB1729 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				02CF28651ED7812000BB1729 /* libFMIceLink.a */,
+				02CF28561ED767D200BB1729 /* libz.tbd */,
+				02CF28541ED767BC00BB1729 /* Foundation.framework */,
+				02CF28521ED767B500BB1729 /* UIKit.framework */,
+				02CF28501ED7679400BB1729 /* CoreGraphics.framework */,
+				02CF284E1ED7678600BB1729 /* CoreMedia.framework */,
+				02CF284C1ED7678000BB1729 /* CoreVideo.framework */,
+				02CF284A1ED7677200BB1729 /* Security.framework */,
+				02CF28481ED7676800BB1729 /* CFNetwork.framework */,
+				02CF28461ED7676100BB1729 /* AVFoundation.framework */,
+				02CF28441ED7674F00BB1729 /* GLKit.framework */,
+				02CF28421ED7674400BB1729 /* OpenGLES.framework */,
+				02CF28401ED7673300BB1729 /* AudioToolbox.framework */,
+				02CF283E1ED7672A00BB1729 /* VideoToolbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0243DAE11ED75EF000CEE189 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0243DB361ED7612300CEE189 /* FMIceLinkWebRTC.h in Headers */,
+				0243DB3A1ED7612300CEE189 /* FMWebSyncSubscribers.h in Headers */,
+				0243DB351ED7612300CEE189 /* FMIceLink.h in Headers */,
+				0243DB391ED7612300CEE189 /* FMWebSyncChat.h in Headers */,
+				0243DB341ED7612300CEE189 /* FM.h in Headers */,
+				0243DB371ED7612300CEE189 /* FMIceLinkWebSync.h in Headers */,
+				0243DB381ED7612300CEE189 /* FMWebSync.h in Headers */,
+				0243DAE91ED75EF000CEE189 /* Icelink.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0243DAE31ED75EF000CEE189 /* Icelink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0243DAEC1ED75EF000CEE189 /* Build configuration list for PBXNativeTarget "Icelink" */;
+			buildPhases = (
+				0243DADF1ED75EF000CEE189 /* Sources */,
+				0243DAE01ED75EF000CEE189 /* Frameworks */,
+				0243DAE11ED75EF000CEE189 /* Headers */,
+				0243DAE21ED75EF000CEE189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Icelink;
+			productName = Icelink;
+			productReference = 0243DAE41ED75EF000CEE189 /* Icelink.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0243DAF21ED75F4600CEE189 /* IcelinkDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0243DB071ED75F4600CEE189 /* Build configuration list for PBXNativeTarget "IcelinkDemo" */;
+			buildPhases = (
+				0243DAEF1ED75F4600CEE189 /* Sources */,
+				0243DAF01ED75F4600CEE189 /* Frameworks */,
+				0243DAF11ED75F4600CEE189 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02CF28621ED778A600BB1729 /* PBXTargetDependency */,
+			);
+			name = IcelinkDemo;
+			productName = IcelinkDemo;
+			productReference = 0243DAF31ED75F4600CEE189 /* IcelinkDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0243DADB1ED75EF000CEE189 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Netguru Sp. z o.o";
+				TargetAttributes = {
+					0243DAE31ED75EF000CEE189 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Manual;
+					};
+					0243DAF21ED75F4600CEE189 = {
+						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = SK8PDF7SG9;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0243DADE1ED75EF000CEE189 /* Build configuration list for PBXProject "Icelink" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0243DADA1ED75EF000CEE189;
+			productRefGroup = 0243DAE51ED75EF000CEE189 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0243DAE31ED75EF000CEE189 /* Icelink */,
+				0243DAF21ED75F4600CEE189 /* IcelinkDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0243DAE21ED75EF000CEE189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0243DAF11ED75F4600CEE189 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0243DB051ED75F4600CEE189 /* LaunchScreen.storyboard in Resources */,
+				0243DB021ED75F4600CEE189 /* Assets.xcassets in Resources */,
+				0243DB221ED760AC00CEE189 /* SessionController.xib in Resources */,
+				0243DB1F1ED760AC00CEE189 /* Info.plist in Resources */,
+				0243DB251ED760AC00CEE189 /* ViewController.xib in Resources */,
+				0243DB001ED75F4600CEE189 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0243DADF1ED75EF000CEE189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0243DAEF1ED75F4600CEE189 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0243DB241ED760AC00CEE189 /* UIView+Toast.m in Sources */,
+				0243DB231ED760AC00CEE189 /* Signalling.m in Sources */,
+				0243DAFD1ED75F4600CEE189 /* ViewController.m in Sources */,
+				0243DB1E1ED760AC00CEE189 /* App.m in Sources */,
+				0243DAFA1ED75F4600CEE189 /* AppDelegate.m in Sources */,
+				0243DAF71ED75F4600CEE189 /* main.m in Sources */,
+				0243DB211ED760AC00CEE189 /* SessionController.m in Sources */,
+				0243DB201ED760AC00CEE189 /* LocalMedia.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02CF28621ED778A600BB1729 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0243DAE31ED75EF000CEE189 /* Icelink */;
+			targetProxy = 02CF28611ED778A600BB1729 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0243DAFE1ED75F4600CEE189 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0243DAFF1ED75F4600CEE189 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0243DB031ED75F4600CEE189 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0243DB041ED75F4600CEE189 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0243DAEA1ED75EF000CEE189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0243DAEB1ED75EF000CEE189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0243DAED1ED75EF000CEE189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Icelink/lib";
+				INFOPLIST_FILE = Icelink/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Icelink/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.roboteam.Icelink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Icelink/lib";
+			};
+			name = Debug;
+		};
+		0243DAEE1ED75EF000CEE189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/Icelink/lib";
+				INFOPLIST_FILE = Icelink/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Icelink/lib",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.roboteam.Icelink;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/Icelink/lib";
+			};
+			name = Release;
+		};
+		0243DB081ED75F4600CEE189 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/IcelinkDemo/IcelinkDemo.pch";
+				INFOPLIST_FILE = IcelinkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.roboteam.IcelinkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0243DB091ED75F4600CEE189 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = SK8PDF7SG9;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/IcelinkDemo/IcelinkDemo.pch";
+				INFOPLIST_FILE = IcelinkDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.netguru.roboteam.IcelinkDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0243DADE1ED75EF000CEE189 /* Build configuration list for PBXProject "Icelink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0243DAEA1ED75EF000CEE189 /* Debug */,
+				0243DAEB1ED75EF000CEE189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0243DAEC1ED75EF000CEE189 /* Build configuration list for PBXNativeTarget "Icelink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0243DAED1ED75EF000CEE189 /* Debug */,
+				0243DAEE1ED75EF000CEE189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0243DB071ED75F4600CEE189 /* Build configuration list for PBXNativeTarget "IcelinkDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0243DB081ED75F4600CEE189 /* Debug */,
+				0243DB091ED75F4600CEE189 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0243DADB1ED75EF000CEE189 /* Project object */;
+}
